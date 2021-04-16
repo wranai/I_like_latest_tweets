@@ -3,12 +3,13 @@
 // @name:ja         最新ツイート表示が好き！
 // @namespace       https://furyutei.work
 // @license         MIT
-// @version         0.0.2
+// @version         0.0.3
 // @description     Switch to latest tweets view when Twitter home-timeline go back "Home" view.
 // @description:ja  Twitterのタイムラインが「ホーム」表示になった際、最新ツイート表示に切り替え
 // @author          furyu
 // @match           https://twitter.com/*
 // @match           https://mobile.twitter.com/*
+// @noframes
 // @grant           none
 // @compatible      chrome
 // @compatible      firefox
