@@ -3,7 +3,7 @@
 // @name:ja         最新ツイート表示が好き！
 // @namespace       https://furyutei.work
 // @license         MIT
-// @version         0.0.3
+// @version         0.0.4
 // @description     Switch to latest tweets view when Twitter home-timeline go back "Home" view.
 // @description:ja  Twitterのタイムラインが「ホーム」表示になった際、最新ツイート表示に切り替え
 // @author          furyu
@@ -81,7 +81,7 @@ if ( ! KEYSTRING_MAP ) {
         
         case 'en' :
             KEYSTRING_MAP = {
-                top_tweets_on : 'Top Tweets off',
+                top_tweets_on : 'Top Tweets on',
                 see_latest_tweets_instead : 'See latest Tweets instead',
             };
             break;
