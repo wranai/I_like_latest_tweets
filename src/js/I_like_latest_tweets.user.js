@@ -3,7 +3,7 @@
 // @name:ja         最新ツイート表示が好き！
 // @namespace       https://furyutei.work
 // @license         MIT
-// @version         0.0.4
+// @version         0.0.5
 // @description     Switch to latest tweets view when Twitter home-timeline go back "Home" view.
 // @description:ja  Twitterのタイムラインが「ホーム」表示になった際、最新ツイート表示に切り替え
 // @author          furyu
@@ -42,7 +42,8 @@ let KEYSTRING_MAP = await ( async () => {
         const
             I18N_SCRIPT_SELECTOR = 'script[src*="/i18n/"]',
             TOP_TWEETS_ON_KEY = 'ccdd3766',
-            SEE_LATEST_TWEETS_INSTEAD_KEY = 'j6382fe9',
+            //SEE_LATEST_TWEETS_INSTEAD_KEY = 'j6382fe9',
+            SEE_LATEST_TWEETS_INSTEAD_KEY = '(?:j6382fea|j6382fe9)',
             // TODO: キーが変更されると動作しなくなる
             
             get_reg = ( key ) => {
