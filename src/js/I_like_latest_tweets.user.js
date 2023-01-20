@@ -3,7 +3,7 @@
 // @name:ja         最新ツイート表示が好き！
 // @namespace       https://furyutei.work
 // @license         MIT
-// @version         0.0.6
+// @version         0.0.7
 // @description     Switch to "Following"(latest tweets) view when Twitter home-timeline go back "For you" view.
 // @description:ja  Twitterのホームタイムラインが「おすすめ」表示になった際、フォロー中(最新ツイート)表示に切り替え
 // @author          furyu
@@ -197,14 +197,14 @@ const
         const
             tabs = document.querySelectorAll( 'a[role="tab"][href*="/home"]' );
         
-        if ( tabs.length != 2 ) {
+        if ( tabs.length < 2 ) {
             return;
         }
         const
             for_you_tab = tabs[ 0 ],
             following_tab = tabs[ 1 ];
         
-        if ( following_tab.getAttribute( 'aria-selected' ) != 'true' ) {
+        if ( for_you_tab.getAttribute( 'aria-selected' ) == 'true' ) {
             following_tab.click();
         }
     } );
